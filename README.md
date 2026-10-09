@@ -1,0 +1,1 @@
+Raw dataset is not bundled. Run python download_data.py to create creditcard.csv in the project root, or download it from https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud . Do not substitute synthetic data for portfolio results.

@@ -1,0 +1,56 @@
+{
+  "source": "OpenML 1597 / ULB Worldline",
+  "raw_rows": 284807,
+  "duplicates_removed": 1081,
+  "split": {
+    "train": {
+      "rows": 170235,
+      "frauds": 342,
+      "time_min": 0.0,
+      "time_max": 120392.0
+    },
+    "validation": {
+      "rows": 56745,
+      "frauds": 57,
+      "time_min": 120393.0,
+      "time_max": 145233.0
+    },
+    "test": {
+      "rows": 56746,
+      "frauds": 74,
+      "time_min": 145234.0,
+      "time_max": 172792.0
+    }
+  },
+  "validation_comparison": [
+    {
+      "model": "dummy",
+      "validation_AP": 0.0010044937879989425
+    },
+    {
+      "model": "logistic",
+      "validation_AP": 0.7726808523329118
+    },
+    {
+      "model": "random_forest",
+      "validation_AP": 0.7770319323600865
+    }
+  ],
+  "test_metrics": {
+    "model": "random_forest",
+    "threshold": 0.27314428953553693,
+    "average_precision": 0.8150992658797693,
+    "roc_auc": 0.9353234163016774,
+    "precision": 0.9166666666666666,
+    "recall": 0.7432432432432432,
+    "f1": 0.8208955223880597,
+    "tn": 56667,
+    "fp": 5,
+    "fn": 19,
+    "tp": 55,
+    "false_alerts_per_1000": 0.08811193740527967,
+    "alert_rate": 0.001057343248863356,
+    "fraud_prevalence": 0.0013040566735981391
+  },
+  "policy": "Model chosen by validation AP; threshold by validation F2; model remains trained on training partition only."
+}
